@@ -1,0 +1,184 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md_green_100">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context="mingi.mingi.Nova_postagem"
+        android:layout_marginLeft="6dp" android:layout_marginRight="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/t1"
+            android:text="Nova Postagem"
+            android:gravity="center"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:textColor="@color/md_green_900"
+            android:textSize="28dp"
+            android:layout_marginBottom="20dp"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/titulo"
+            android:layout_below="@+id/t1"
+            android:textSize="15dp"
+            android:hint="Titulo aqui:"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:id="@+id/texto"
+            android:hint="Texto aqui:"
+            android:layout_marginBottom="10dp"
+
+            android:layout_below="@+id/titulo" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/texto"
+            android:textSize="14dp"
+            android:id="@+id/pegar_imagem1"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/botao2"
+            android:text="Tirar foto"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/texto"
+            android:layout_toRightOf="@id/pegar_imagem1"
+            android:textSize="14dp"
+            android:id="@+id/pegar_imagem1_galeria"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:text=" galeria"
+            android:background="@drawable/botao2"
+            android:layout_marginLeft="30dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pegar_imagem1"
+            android:id="@+id/imagem_1"
+            android:longClickable="false"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imagem_1"
+            android:textSize="14dp"
+            android:id="@+id/pegar_imagem2"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/botao2"
+            android:text="Tirar foto"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imagem_1"
+            android:layout_toRightOf="@id/pegar_imagem2"
+            android:textSize="14dp"
+            android:id="@+id/pegar_imagem2_galeria"
+            android:layout_marginBottom="5dp"
+            android:text=" galeria"
+            android:background="@drawable/botao2"
+            android:layout_marginLeft="30dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pegar_imagem2"
+            android:id="@+id/imagem_2"
+            android:longClickable="false"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imagem_2"
+            android:textSize="14dp"
+            android:id="@+id/pegar_imagem3"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/botao2"
+            android:text="Tirar foto"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imagem_2"
+            android:layout_toRightOf="@id/pegar_imagem3"
+            android:textSize="14dp"
+            android:id="@+id/pegar_imagem3_galeria"
+            android:layout_marginBottom="5dp"
+            android:text=" galeria"
+            android:background="@drawable/botao2"
+            android:layout_marginLeft="30dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pegar_imagem3"
+            android:id="@+id/imagem_3"
+            android:longClickable="false"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagem_3"
+            android:layout_marginBottom="5dp"
+            android:textSize="14dp"
+            android:text="Escolha a categoria da postagem:"
+            android:id="@+id/label_categoria"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_categoria"
+            android:id="@+id/categoria"
+
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/categoria"
+            android:textSize="15dp"
+            android:text="Enviar"
+            android:id="@+id/enviar"
+            android:background="@drawable/botaoenviar"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

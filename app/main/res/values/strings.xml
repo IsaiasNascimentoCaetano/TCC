@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Mingi</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_feeds">Feeds</string>
+
+    <string name="title_section1">Teste 1</string>
+    <string name="title_section2">Teste 2</string>
+    <string name="title_section3">Teste 3</string>
+
+
+    <string name="navigation_drawer_open">Abrir navigation drawer</string>
+    <string name="navigation_drawer_close">Fechar navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_visualizar__postagem">Visualizar Postagem</string>
+    <string name="title_activity_nova_postagem">Nova_postagem</string>
+    <string name="title_activity_teste">teste</string>
+    <string name="drawer_open">abrir</string>
+    <string name="drawer_close">fechar</string>
+    <string name="title_activity_pagina__usuario">Pagina_Usuario</string>
+    <string name="title_activity_mais_curtidas">mais_curtidas</string>
+</resources>
